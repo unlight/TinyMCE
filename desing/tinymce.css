@@ -1,0 +1,29 @@
+#hoverbox {
+	font-family: Tahoma;
+	font-size: 12px;
+	background-color: #ffffcc;
+	color: #000000;
+	border: 1px solid #ddd;
+	line-height: 100%;
+	padding: 3px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+#hoverbox span {
+	cursor: pointer;
+}
+
+
+.mceStatusbar span {
+	display: inline;
+}
+
+
+.mceEditor .mceButton span.mce_turnoff {
+	background-position: -460px -20px;
+}
+
+
