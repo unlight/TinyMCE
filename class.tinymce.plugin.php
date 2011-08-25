@@ -32,7 +32,6 @@ class TinyMCEPlugin extends Gdn_Plugin {
 /*	public function PluginController_TestTextarea_Create($Sender) {
 		$Sender->AddJsFile('jquery.js');
 		$Sender->AddJsFile('jquery.livequery.js');
-		// TODO: LOAD FROM JS
 		$Sender->AddJsFile('plugins/TinyMCE/vendors/tinymce/jquery.tinymce.js');
 		$Sender->Form = Gdn::Factory('Form');
 		$Sender->View = dirname(__FILE__) . '/test.php';

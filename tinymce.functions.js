@@ -1,4 +1,4 @@
-jQuery().ready(function(){
+jQuery().ready(function($){
 	
 	var handle;
 	var tmce = {
