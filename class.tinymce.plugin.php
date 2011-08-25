@@ -5,7 +5,7 @@ $PluginInfo['TinyMCE'] = array(
 	'Description' => 'Adapts TinyMCE to work with Garden.',
 	'Author' => 'Serenity',
 	'AuthorUrl' => 'http://liandri.beyondunreal.com/BR-Serenity',
-	'Version' => '1.02',
+	'Version' => '1.02.3.4.4',
 	'Date' => 'Summer 2011',
 	'RegisterPermissions' => array(
 		'Plugins.TinyMCE.Wysiwyg.Allow'
@@ -21,7 +21,7 @@ class TinyMCEPlugin extends Gdn_Plugin {
 	
 	public function Base_Render_Before($Sender) {
 		if ($Sender->DeliveryType() != DELIVERY_TYPE_ALL) return;
-		if (!property_exists($Sender, 'Form')) return;
+		if (property_exists($Sender, 'Form') === False) return;
 		if (Gdn::Session()->CheckPermission('Plugins.TinyMCE.Wysiwyg.Allow')) {
 			$Sender->AddJsFile('plugins/TinyMCE/vendors/tinymce/jquery.tinymce.js');
 			$Sender->AddJsFile('tinymce.functions.js', 'plugins/TinyMCE');
