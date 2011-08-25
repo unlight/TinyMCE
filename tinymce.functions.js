@@ -45,7 +45,6 @@ jQuery().ready(function(){
 			if (!hidden) $(self).tinymce(tmce);
 			if (hidden == 'true') {
 				tinymce.execCommand('mceToggleEditor', false, self.id);
-				//var ed = $(self).tinymce();
 			}
 		});
 		tooltip().html(btn);
@@ -58,7 +57,7 @@ jQuery().ready(function(){
 	
 	var handlerOut = function(e) {
 		var h = (typeof(tinymce) == 'undefined' || $(this).tinymce().isHidden());
-		if (h) setTimeout(handlerfadeOut, 500);
+		if (h) setTimeout(handlerfadeOut, 800);
 	}
 	
 	$('textarea.TextBox').hover(handlerIn, handlerOut);
