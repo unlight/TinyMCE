@@ -1,5 +1,6 @@
 jQuery().ready(function($){
 	
+	//var WebRoot = gdn.definition('WebRoot');
 	var handle;
 	var tmce = {
 		script_url : '/plugins/TinyMCE/vendors/tinymce/tiny_mce.js',
@@ -10,7 +11,7 @@ jQuery().ready(function($){
 		theme : "advanced",
 		//plugins : "pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template",
 		plugins : 'preview,fullscreen,table,style,contextmenu,paste,inlinepopups,advimage,advlink',
-		theme_advanced_styles : "Info=Info",
+		theme_advanced_styles : "Information=Info,Paragraph=P",
 		theme_advanced_source_editor_wrap : false,
 		theme_advanced_buttons1 : "bold,italic,underline,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,bullist,numlist,blockquote,link,unlink,image,charmap",
 		theme_advanced_buttons2 : "code,fullscreen,pastetext,pasteword,tablecontrols,visualaid,styleprops,attribs,cleanup,removeformat,turnoff",

@@ -18,6 +18,14 @@ echo $this->Form->TextBox('Body', array('Multiline' => True));
 ?>
 </li>
 
+
+<li>
+<?php 
+echo $this->Form->Label('Body', 'Body', array('class' => 'ForWide'));
+echo $this->Form->TextBox('Body', array('Multiline' => True));
+?>
+</li>
+
 </ul>
 
 <?php 
